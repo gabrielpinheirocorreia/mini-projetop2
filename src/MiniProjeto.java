@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class MiniProjeto {
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner (System.in);
+
         iniciar();
     }
     public static void iniciar() {
@@ -18,8 +19,8 @@ public class MiniProjeto {
         System.out.println("1. Seguir a trilha pelo rio.");
         System.out.println("2. Seguir o caminho pelo deserto.");
 
-        Scanner scanner = new Scanner(System.in);
-        String escolha = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String escolha = sc.nextLine();
 
         if (escolha.equals("1")) {
             etapa2a();
@@ -87,11 +88,14 @@ public class MiniProjeto {
         if (escolha.equals("1")) {
             finalFeliz();
         } else if (escolha.equals("2")) {
-            finalTriste();
+            Finaltriste();
         } else {
             System.out.println("Opção inválida. Por favor, escolha novamente.");
             etapa3a1();
         }
+    }
+    private static void Finaltriste() {
+        System.out.println("Infelizmente a sua jornada acabou");
     }
 
     public static void etapa3a2() {
@@ -106,7 +110,7 @@ public class MiniProjeto {
         String escolha = scanner.nextLine();
 
         if (escolha.equals("1")) {
-            finalTriste();
+            Finaltriste();
         } else if (escolha.equals("2")) {
             etapa1();
         } else {
@@ -127,7 +131,7 @@ public class MiniProjeto {
         String escolha = scanner.nextLine();
 
         if (escolha.equals("1")) {
-            finalTriste();
+            Finaltriste();
         } else if (escolha.equals("2")) {
             finalFeliz();
         } else {
@@ -150,7 +154,7 @@ public class MiniProjeto {
         if (escolha.equals("1")) {
             finalFeliz();
         } else if (escolha.equals("2")) {
-            finalTriste();
+            Finaltriste();
         } else {
             System.out.println("Opção inválida. Por favor, escolha novamente.");
             etapa3b2();
