@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MiniProjeto {
     public static void main(String[] args) {
+        
         iniciar();
     }
     public static void iniciar() {
