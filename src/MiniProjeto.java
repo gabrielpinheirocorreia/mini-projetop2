@@ -8,13 +8,34 @@ public class MiniProjeto {
     }
     public static void iniciar() {
         System.out.println("Bem-vindo ao Running to the Dream: Aventura do Sertão à Cidade Grande!");
-        System.out.println("Duas crianças estão prestes a embarcar em uma emocionante jornada. Vamos começar!");
+        System.out.println("Duas crianças estão prestes a embarcar "+
+        "em uma emocionante jornada. Vamos começar!");
         System.out.println();
-        etapa1();
+        System.out.println("As crianças, Gabriel e Maria Clara, estão no sertão e precisam escolher"+
+       " o caminho para chegar à cidade grande.");
+        
+        System.out.println("Escolha entre Gabriel e Maria Clara para começarmos: ");
+        System.out.println("1. Gabriel");
+        System.out.println("2. Maria Clara");
+        
+            Scanner sc = new Scanner(System.in);
+            String escolha = sc.nextLine();       
+
+        if (escolha.equals("Gabriel")) {
+            etapa2a();
+        } else if (escolha.equals("Maria Clara")) {
+            etapa2b();
+        } else {
+            System.out.println("Opção inválida. Por favor, escolha novamente.");
+            etapa1();
+        }
     }
+   
     public static void etapa1() {
-        System.out.println("Etapa 1:");
-        System.out.println("As crianças, João e Maria, estão no sertão e precisam escolher o caminho para chegar à cidade grande.");
+        
+            Personagem Gabriel = new Personagem("Gabriel", 100); 
+            Personagem MariaClara = new Personagem("Maria Clara", 80); 
+
         System.out.println("Escolha o caminho:");
         System.out.println("1. Seguir a trilha pelo rio.");
         System.out.println("2. Seguir o caminho pelo deserto.");
@@ -52,7 +73,6 @@ public class MiniProjeto {
             etapa2a();
         }
     }
-
     public static void etapa2b() {
         System.out.println("Etapa 2b:");
         System.out.println("As crianças decidiram seguir o caminho pelo deserto.");
@@ -60,7 +80,6 @@ public class MiniProjeto {
         System.out.println("Escolha o caminho:");
         System.out.println("1. Virar à direita.");
         System.out.println("2. Virar à esquerda.");
-
         Scanner scanner = new Scanner(System.in);
         String escolha = scanner.nextLine();
 
