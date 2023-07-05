@@ -16,12 +16,17 @@ public class Personagem     {
             this.nome = nome;
         }
     
-        public int getEnergia() {
-            return energia;
-        }
-    
         public void setEnergia(int energia) {
             this.energia = energia;
+        }
+
+        public void getEnergia (int energia) {
+            this.energia = energia;
+
+        }
+
+        public int getEnergia() {
+            return 0;
         }
     }
     
