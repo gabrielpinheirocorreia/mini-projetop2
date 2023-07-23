@@ -1,5 +1,6 @@
 import static java.lang.System.in;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class MiniProjeto {
 
