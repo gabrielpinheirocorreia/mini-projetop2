@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class Capitulo    {
 
-    String script;
-    String nomeCapitulo;
+   private String script;
+    private String nomeCapitulo;
     int escolha1;
     int escolha2;
     Personagem personagem;
@@ -13,6 +13,7 @@ public class Capitulo    {
     String escolhas []; 
     String nome;
     String texto;
+    String proximo;
 /**
  * @param nomeCapitulo
  * @param script
@@ -96,7 +97,19 @@ public int escolher() {
 }
 
         
+
+
+void executar () {
+
+    this.mostrar();
+    int idEscolha = this.escolher();
+
+    if (idEscolha != -1) {
+        Escolha escolha = this.escolhas.get(idEscolha);
+        escolha.proximo.executar();
+    }
+    else {
+        System.out.println("Escolha outra opção!");
+    }
 }
-
-
-
+}
