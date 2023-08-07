@@ -1,4 +1,4 @@
-public class Escolha {
+private class Escolha {
     private String texto;
     private Capitulo proximo;
 

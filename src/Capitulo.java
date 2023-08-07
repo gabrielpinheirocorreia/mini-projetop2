@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Capitulo    {
+private class Capitulo    {
 
    private String script;
     private String nomeCapitulo;

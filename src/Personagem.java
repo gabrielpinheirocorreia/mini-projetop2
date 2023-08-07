@@ -1,4 +1,4 @@
-public class Personagem     {
+private class Personagem     {
    
     String nome;
     int energia;
