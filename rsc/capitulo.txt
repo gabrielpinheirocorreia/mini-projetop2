@@ -1,0 +1,8 @@
+personagem
+-10
+capitulo1
+capitulo2a
+capitulo2b
+capitulo3a1
+capitulo3b1
+capitulo3b2

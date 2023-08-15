@@ -1,0 +1,23 @@
+personagem 
+Gabriel
+100
+-10
+capitulo1  
+capitulo2a
+capitulo2b
+capitulo3a1
+capitulo3a2
+capitulo3b1
+capitulo3b2
+
+personagem2
+Maria Clara
+100
+-10
+capitulo1
+capitulo2a
+capitulo2b
+capitulo3a1
+capitulo3a2
+capitulo3b1
+capitulo3b2
