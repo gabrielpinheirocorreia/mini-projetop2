@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-private class Capitulo    {
+private class Capitulo   {
 
    private String script;
     private String nomeCapitulo;
@@ -95,8 +95,6 @@ public static void etapa1(Scanner scanner) {
 public int escolher() {
     return 0;
 }
-
-        
 
 
 void executar () {
